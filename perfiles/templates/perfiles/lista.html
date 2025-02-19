@@ -1,0 +1,9 @@
+{% extends 'perfiles/base.html' %}
+{% block titulo %}Lista de perfiles{% endblock %}
+{% block contenido %}
+    {% for perfil in perfiles %}
+        <p>
+            <a href="{% url 'detalle_perfil' perfil.id %}">{{ perfil.nombre }} {{ perfil.apellidos }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}

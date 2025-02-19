@@ -1,0 +1,9 @@
+{% extends 'perfiles/base.html' %}
+{% block titulo %}{{perfil}}{% endblock %}
+{% block contenido %}
+    <h1>{{perfil.nombre}} {{perfil.apellidos}}</h1>
+    <h3>Fecha de nacimiento</h3>
+    <p>{{perfil.fecha_nacimiento}}</p>
+    <h3>Preferencias</h3>
+    <p>{{perfil.preferencias}}</p>
+{% endblock %}
